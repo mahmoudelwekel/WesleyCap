@@ -1,0 +1,750 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-16" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="../fontawesome-all.js"></script>
+
+    <!--    Jquery library-->
+    <script src="../jquery-3.1.1.min.js"></script>
+
+    <!--    bootstrap CSS-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--    bootstrap JS-->
+    <script src="../bootstrap.min.js"></script>
+
+    <style>
+        body{
+        font-family: 'Open Sans', sans-serif;
+    } 
+         @media (min-width: 979px) {
+                ul.nav li.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                    }
+                
+                .dropdown-toggle{
+                    width:0px;
+                    display:none!important;
+                }
+                
+               
+            }
+    
+
+       body{
+        font-family: 'Open Sans', sans-serif;
+    }    
+       .navbar-nav li {
+           
+           margin:0px 0px 0px 0px ;
+        }
+       
+        .navbar-nav li :hover{
+            border-top:2px solid black;
+        }
+        
+        
+        .blogbtn{
+            border-width:2px;
+            border-color:#000000;
+        }
+        .blogbtn:hover
+        {
+            background-color:#000000 !important;
+            color:#FFFFFF !important;
+            border-color:#000000;
+        }
+        .dropdown-menu{
+            border-radius: 5px;
+            border-bottom: 3px solid #ff6114 ;
+            border-top:none!important;
+            background-color:rgba(0,0,0,0.5);
+            margin:0px!important;
+            padding:0px!important;
+
+        }
+        .dropdown-menu li{
+            margin:0px!important;
+            padding:0px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li a{
+            background-color:#3f3f3f;
+            margin-top:1px!important;
+            padding:10px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li :hover{
+            border:none !important;
+            background-color:black!important;
+        }
+        .dropdown:hover{
+            border-top:2px solid black;
+        }
+
+        .fixed {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        .fixed {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .hovershadow {
+            width: 90%;
+            padding-bottom: 40px;
+            transition: transform .8s, box-shadow 1.5s;
+            margin: 0 auto;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+            .hovershadow:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2);
+                box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+            }
+
+        .blur {
+            filter: blur(2px);
+        }
+
+        .footermenu {
+            padding: 0px !important;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+            .footermenu li a {
+                padding: 8px 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                color: white !important;
+                text-decoration-style: none !important;
+                display: inline-block !important;
+            }
+
+            .sidemenu li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+            .sidemenu {
+            padding: 0px 0px 20px 0px !important;
+            list-style-type: none;
+        }
+
+            .sidemenu li a {
+                padding: 8px 0;
+                font-size: 12px;
+                text-transform: uppercase;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                color: black !important;
+                text-decoration-style: none !important;
+                display: inline-block !important;
+            }
+
+            .footermenu li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+        .cinput {
+            background-color: #444;
+            border-color: #444;
+            border-width: 2px;
+        }
+
+            .cinput:focus {
+                border-color: #ff6114;
+            }
+            .clearfix {
+    overflow: auto;
+    text-align:left;
+    font-size:16px;
+    margin-bottom:50px;
+}
+
+.img2 {
+    float: right;
+}
+h1:hover{
+    color:#ff6114;
+}
+strong{
+        color:#ff6114;
+
+}
+ .social{
+            height:60px;width:60px;background-color:rgb(34, 34, 34);border-radius:5px;padding:20px;float:left;margin:1px;
+            border-top: solid 2px rgb(34, 34, 34);
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            transition : border 500ms ease-out;
+        }
+        .social:hover{
+            border-width: 2px;
+            border-color:#ff6114;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-default" style="background-color:white;margin:0px !important;">
+        <div class="container">
+            <div class="navbar-header" style="height:100px;">
+
+                <div class="col-xs-10 col-sm-8 col-md-12">
+                    <a class="navbar-brand" href="#">
+                        <span><img src="../images/wesley-capital-logo.webp" class="img-responsive" style="min-height:70px!important;" /></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:30px;margin-right:0px;border:none;float:right;">
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold;padding-top:20px">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                    <li><a href="../index.html">HOME</a></li>
+
+                    <li class="dropdown" style="background-color:white;">
+                        <a href="../services/index.html" style="display: inline-block;border:none!important;background-color:white;">SERVICES</a><a style="display: inline-block;border:none!important;float:right;background-color:white;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/free-sales-training.html">Free Sales Training</a></li>
+                            <li><a href="../services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                            <li><a href="../services/inbound-marketing.html">Inbound Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li style="border:none;padding:10px"><a href="../blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                    <li style="border:none;padding:10px"><a href="../free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;font-weight:bold;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                    <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tooop" style="display:none">
+        <div class="visible-lg">
+            <nav class="navbar navbar-default navbar-fixed-top " style="background-color:white;opacity:.93">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="padding:0px!important ; margin:0px!important;">
+                            <span><img src="../images/wesley-capital-logo.webp" class="img-responsive" style="max-height:50px!important;" /></span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold">
+                        <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                            <li><a href="../index.html">HOME</a></li>
+
+                            <li class="dropdown">
+                                <a href="../services/index.html" style="display: inline-block;border:none!important;">SERVICES</a><a style="display: inline-block;border:none!important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../services/free-sales-training.html">Free Sales Training</a></li>
+                                    <li><a href="../services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                                    <li><a href="../services/inbound-marketing.html">Inbound Marketing</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="../about.html">ABOUT</a></li>
+                            <li><a href="../contact.html">CONTACT</a></li>
+                            <li style="border:none;padding:10px"><a href="../blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                            <li style="border:none;padding:10px"><a href="../free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;font-weight:bold;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                            <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div style="background-color:#fafafa;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
+        <div class="container">
+            <h4 style="padding:10px">GET THE KNOWLEDGE YOU WANT</h4>
+
+            
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-top:100px;">
+           <div class="row">
+               <div class="col-xs-12 col-md-8" style="text-align:center;border-right:1px solid rgba(0,0,0,0.1)">
+                   <div style="margin-bottom:200px;">
+                       <h1> Sales Onboarding and Training Best Practices</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="../images/fgdbfv.webp"   style="width:200px;margin:0px  50px 20px  50px">
+                           You can rest easy after you make it through the sales interview process, right? Your work is just getting started as you onboard top sales performers. Even the most talented employees in the world need to get up to speed on your specific processes, technologies, policies and everything else that goes into the position. These <strong>sales onboarding and training best practices</strong> will help you get off on the right foot with the talented salespeople you hired.
+                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> Effectively Interviewing Top Sales Candidates</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%2810%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           You have a list of sales candidates ready to go, but there's one thing standing between you and your new hire: the interview process. You have the opportunity to dive deep and see whether sales talent that looks great on paper can cut it in your organization. You get a negative <strong>298 percent ROI</strong> if you hire the wrong person, so your interviewing skills need to be up to the task.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> Are You Looking for the Right Sales Talent Fit?</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%289%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           You find yourself in a frustrating position. The top salesperson in your market segment is working for your company, but their performance is abysmal compared to the rest of the team. They didn't suddenly forget their techniques, and as far as you know they aren't trying to sabotage your growth. So what happened?                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> How to Approach Top Sales Recruits (With Free Template)</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%288%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           You have your eye on a short list of sales people who have the potential to propel your company into a strong growth period. Now you need to reach out directly and start the conversation that leads into the candidate walking through your doors. You can't approach these candidates with a one-size-fits-all tactic, and they need a careful touch and a lot of relationship building. Use these strategies to nail everything from your first interaction to making the job offer.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> Branding Your Company to Attract Top Sales People</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%286%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           Your company's reputation impacts far more than how your customers and clients perceive you.  Recruiting sales people hinges on positioning yourself as THE organization to work for. In fact, <strong>69 percent of people</strong> refuse to work for businesses with poor reputations, even if the alternative is unemployment. Employer branding positions your company as the go-to place for a quality place to work. You can also reduce your cost-per-hire by <strong>50 percent</strong> and improve your <strong>new hire retention rate by 40 percent</strong>. Use these tips to build your brand and attract high-quality passive candidates.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> How to Measure Sales Recruitment Efforts</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%287%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           Everyone wants a successful sales recruit - but what does that actually mean in measurable terms? If you don't track the key performance indicators tied to top talent, how do you know what part of your sales recruitment strategy is working? <strong>Seventy-five percent of human resources leadership</strong> say hiring analytics are critical for growth. The ideal KPIs for your organization may look drastically different from your competitors, as the way you define success may be far different from their ideas. Use this sales recruitment KPI list to track and improve the quality of hires coming in through your door.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> Identifying Promising Sales Recruitment Channels</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%285%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           What does your typical buyer journey look like? Your customers don't follow a linear path, moving from channel to channel. Your sales candidates take a similar route. Everything from social media to local meetup groups can influence your <strong>sales recruitment process.</strong> You no longer have the luxury of relying on one or two channels to get the message out to the best sales talent. Learn how to identify promising recruitment channels to improve your hiring success rate.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1> How to Write Sales Job Advertisments That Work!</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Relax%20%284%29.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           It’s business as usual at your organization. The HR department writes job advertisements for your sales positions, posts them and you end up with lackluster candidates. When you’re ready to change this outcome, you need to start with the way you write your listings.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1>Sales Recruitment Strategies For 2017</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Sales%20Recruiting%20Strategies%20For%202017NoFearGears.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           <h3>Step 1: Develop a Sales Recruitment Process Strategy</h3> 
+                           The difference between your top sales performers and the bottom can be significant, with an average gap of $123,000 between the two. These A-team sales professionals also excel at qualifying leads and close <strong>46 percent of their deals.</strong> Without talented sales professionals, your business faces significant challenges with sustainable, long-term growth. Too many companies put up job listings and hope for the best, but developing a comprehensive recruiting strategy increases the quality of your existing workforce and fills your hiring pipeline with high-quality candidates. It's time to improve sales recruitment.                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+                   <div style="margin-bottom:200px;">
+                       <h1>Sales Onboarding 30-60-90 Day Plan</h1>
+                       <br />
+                       <p style="font-size:18px;">by <strong>Ashley Wesley MA., CIM., CHRP., CHRL.</strong>, on Jul 18, 2017 1:22:00 PM</p>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                       <div class="clearfix">
+                           <img class="img2 img-responsive" src="https://www.wesleycapital.ca/hubfs/Easy%20Dishes%20ToMake%20For%20Your50th%20BirthdayDinner%20Party.png?t=1535134525536"   style="width:200px;margin:0px  50px 20px  50px">
+                           Using top-notch onboarding procedures for your company's new salespeople could be the difference between the business merely doing okay and excelling. Enhancing this one area of operations can lead to saved time and money, improved employee retention rates, better customer service, fewer stressors for new hires, decreased error rates and increased employee engagement.
+                           <br /><br />
+                           In fact, onboarding is the most important time at your company for many employees, as the <strong>Harvard Business Review</strong> notes. Skip onboarding or get it wrong, and employees may leave. For example, within one year, 23 percent of new hires say sayonara. Some other eye-opening stats:                       </div>
+
+                       <a href="inbound-marketing.html" class="btn btn-lg btn-default" style="border:2px solid #ff6114;color:#ff6114;float:left;">Continue Reading →</a>
+
+                       <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:7px;margin:50px 0px ;" />
+
+                   </div>
+
+
+               </div>
+
+               <div class="col-xs-12 col-md-4" style="padding:30px">
+                   <p ">
+                       Join our growing community of over<strong> 3000 sales, sales leaders and business owners</strong> and subscribe to Ashley Wesley's Blog to receive great sales and leadership content delivered right to your inbox.
+                       <br /><br />
+                       Ashley's Blog covers everything you need to become a sales and sales leader guru. Topics include sales compensation, sales training, sales coaching, neuromarketing, email sales, funnel management, big data, and more.
+                       <br /><br />
+                       <hr>
+                   </p>
+                   <div>
+                       <h3>Subscribe to Email Updates</h3>
+                       <br />
+                       <div class="form-group">
+                           <label>Email*</label>
+                           <input class="form-control" required type="text" />
+                       </div>
+                       <div class="form-group">
+                           <input type="checkbox" aria-label="...">
+                           <label> Notification Frequency*</label>
+                       </div>
+                       <input id="Submit1" class="btn btn-lg btn-warning" type="submit" value="SUBSCRIBE" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                       <br /><br />
+                       <hr>
+                   </div>
+
+                   <div>
+                       <h3>Recent Posts</h3>
+                       <ul class="sidemenu">
+                           <li>
+                               <a href="#">Sales Onboarding and Training Best Practices</a>
+                           </li>
+                           <li>
+                               <a href="#">Effectively Interviewing Top Sales Candidates</a>
+                           </li>
+                           <li>
+                               <a href="#">Are You Looking for the Right Sales Talent Fit?</a>
+                           </li>
+                           <li>
+                               <a href="#">How to Approach Top Sales Recruits (With Free Template)</a>
+                           </li>
+                           <li>
+                               <a href="#">Branding Your Company to Attract Top Sales People</a>
+                               <br /><br /><br />
+                           </li>
+                       </ul>
+                   </div>
+
+                   <div>
+                       <h3>Posts by Topic</h3>
+                       <ul class="sidemenu">
+                           <li>
+                               <a href="#">Sales Training (24)</a>
+                           </li>
+                           <li>
+                               <a href="#">Sales Recruitment (13)</a>
+                           </li>
+                           <li>
+                               <a href="#">Testimonial (11)</a>
+                           </li>
+                           <li>
+                               <a href="#">Recruiting (9)</a>
+                           </li>
+                           <li>
+                               <a href="#">Sales Coaching (8)</a>
+                               <br /><br /><br />
+                           </li>
+                       </ul>
+                   </div>
+
+                   <div>
+                       <h3>Blog Archive</h3>
+                       <ul class="sidemenu">
+                           <li>
+                               <a href="#">October 2015 (14)</a>
+                           </li>
+                           <li>
+                               <a href="#">July 2017 (9)</a>
+                           </li>
+                           <li>
+                               <a href="#">March 2016 (6)</a>
+                           </li>
+                           <li>
+                               <a href="#">November 2016 (5)</a>
+                           </li>
+                           <li>
+                               <a href="#">May 2016 (4)</a>
+                           </li>
+                       </ul>
+                   </div>
+
+               </div>
+           </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div style="background-color:#333333;color:white;padding-top:60px;padding-bottom:20px; background-image:url('https://cdn2.hubspot.net/hub/273774/file-1146934634-png/mp/themes/Act-Theme/images/footer-pattern.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONTACT</h4>
+                    <p>
+                        Wesley Capital Ltd.<br />
+                        218 Silvercreek Pkwy N #17A.<br />
+                        Guelph, ON<br />
+                        N1H 8E8, Canada<br />
+                        519-994-4933<br />
+                        ash@wesleycapital.ca<br />
+                    </p>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>FROM OUR BLOG</h4>
+                    <ul class="footermenu">
+                        <li>
+                            <a href="#">Sales Onboarding and Training Best Practices</a>
+                        </li>
+                        <li>
+                            <a href="#">Effectively Interviewing Top Sales Candidates</a>
+                        </li>
+                        <li>
+                            <a href="#">Are You Looking for the Right Sales Talent Fit?</a>
+                        </li>
+                        <li>
+                            <a href="#">How to Approach Top Sales Recruits (With Free Template)</a>
+                        </li>
+                    </ul>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                                <br /><br />
+                                <input id="Submit1" class="btn btn-lg btn-warning" type="submit" value="SUBSCRIBE" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONNECT WITH US</h4>
+                    <h4>CONNECT WITH US</h4>
+                    <div class="social">
+                        <i class="fab fa-twitter fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-linkedin-in fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-google-plus-g fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f fa-lg" style="color:white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color:#222222;color:white;padding:20px 0px;">
+        <div class="container">
+            <h6><strong> © 2018 WESLEY CAPITAL LTD.</strong></h6>
+        </div>
+    </div>
+
+    <div id="upup" style="position:fixed;bottom:-1px;right:10px;display:none;" class="container-fluid ">
+        <a href="#" class="back-to-top">
+            <i class="fas fa-angle-up fa-2x" style="color:white;background-color:#444;width:50px;height:40px;opacity:.8;"></i>
+        </a>
+    </div>
+
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:white!important;padding-top:100px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search this site in Google" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" id="basic-addon1" style="background-color:#ff6114;color:white;"><span class="fas fa-search" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 100) {
+                        $('.tooop').fadeIn(1000);
+                    } else {
+                        $('.tooop').fadeOut();
+                    };
+
+
+                    if ($(window).scrollTop() > 300) {
+                        $('#upup').slideDown();
+                    } else {
+                        $('#upup').slideUp();
+                    };
+                });
+    </script>
+
+    <script>
+                jQuery(document).ready(function () {
+                    var offset = 250;
+                    var duration = 300;
+
+                    jQuery('.back-to-top').click(function (event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                        return false;
+                    })
+                });
+    </script>
+
+
+    <script>
+                $(document).ready(function () {
+
+                    $('.cinput').focus(function () {
+                        $('.cc').addClass("blur");
+                    });
+                    $('.cinput').blur(function () {
+                        $('.cc').removeClass("blur");
+                    });
+
+                });
+    </script>
+
+
+</body>
+</html>

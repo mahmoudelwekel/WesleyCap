@@ -1,0 +1,25 @@
+@media screen and (min-width: 0px) {
+  .responsive-txt {
+    font-size: calc(var(--size) *.4);
+  }
+}
+@media screen and (min-width: 576px) {
+  .responsive-txt {
+    font-size: calc(var(--size) *.55);
+  }
+}
+@media screen and (min-width: 720px) {
+  .responsive-txt {
+    font-size: calc(var(--size) *.7);
+  }
+}
+@media screen and (min-width: 992px) {
+  .responsive-txt {
+    font-size: calc(var(--size) *.85);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .responsive-txt {
+    font-size: calc(var(--size));
+  }
+}

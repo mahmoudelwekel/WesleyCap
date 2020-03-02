@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-16" />
+
+    <script src="fontawesome-all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <!--    Jquery library-->
+    <script src="jquery-3.1.1.min.js"></script>
+
+    <!--    bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--    bootstrap JS-->
+    <script src="bootstrap.min.js"></script>
+
+    <style>
+          body{
+        font-family: 'Open Sans', sans-serif;
+    } 
+         @media (min-width: 979px) {
+                ul.nav li.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                    }
+                
+                .dropdown-toggle{
+                    width:0px;
+                    display:none!important;
+                }
+                
+               
+            }
+    
+
+       body{
+        font-family: 'Open Sans', sans-serif;
+    }    
+       .navbar-nav li {
+           
+           margin:0px 0px 0px 0px ;
+        }
+       
+        .navbar-nav li :hover{
+            border-top:2px solid black;
+        }
+        
+        
+        .blogbtn{
+            border-width:2px;
+            border-color:#000000;
+        }
+        .blogbtn:hover
+        {
+            background-color:#000000 !important;
+            color:#FFFFFF !important;
+            border-color:#000000;
+        }
+        .dropdown-menu{
+            border-radius: 5px;
+            border-bottom: 3px solid #ff6114 ;
+            border-top:none!important;
+            background-color:rgba(0,0,0,0.5);
+            margin:0px!important;
+            padding:0px!important;
+
+        }
+        .dropdown-menu li{
+            margin:0px!important;
+            padding:0px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li a{
+            background-color:#3f3f3f;
+            margin-top:1px!important;
+            padding:10px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li :hover{
+            border:none !important;
+            background-color:black!important;
+        }
+        .dropdown:hover{
+            border-top:2px solid black;
+        }
+
+        .fixed {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .hovershadow {
+            width: 90%;
+            height:750px;
+            transition: transform .8s, box-shadow 1.5s;
+            margin: 0 auto;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+            .hovershadow:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2);
+                box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+            }
+
+        .blur {
+            filter: blur(2px);
+        }
+
+        .footermenu {
+            padding: 0px !important;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+            .footermenu li a {
+                padding: 8px 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                color: white !important;
+                text-decoration-style: none !important;
+                display: inline-block !important;
+            }
+
+            .footermenu li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+
+        .cinput {
+            background-color: #444;
+            border-color: #444;
+            border-width: 2px;
+        }
+
+            
+        .cinput:focus 
+        {            
+            border-color: #ff6114;           
+            }
+        
+        .list1 li{
+            font-size: 18px;
+            text-align: left;
+            padding:10px;
+        }
+        .list2{
+            list-style:none;
+            color:#fff;
+            font-size:30px;
+            padding:0;
+        }
+        .list2 li{
+            padding:12px 0px 12px 0px;
+        }
+        body{
+        font-family: 'Open Sans', sans-serif!important;
+    }
+        .arrow{
+            width:40px;height:40px;border-radius:50%;padding:5px
+        }
+        .arrow:hover{
+            border:2px solid #ff6114;
+        }
+        .arrlink:hover{
+            color:#ff6114;
+        }
+
+          .social{
+            height:60px;width:60px;background-color:rgb(34, 34, 34);border-radius:5px;padding:20px;float:left;margin:1px;
+            border-top: solid 2px rgb(34, 34, 34);
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            transition : border 500ms ease-out;
+        }
+        .social:hover{
+            border-width: 2px;
+            border-color:#ff6114;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default" style="background-color:white;margin:0px !important;">
+        <div class="container">
+            <div class="navbar-header" style="height:100px;">
+
+                <div class="col-xs-10 col-sm-8 col-md-12">
+                    <a class="navbar-brand" href="#">
+                        <span><img src="images/wesley-capital-logo.webp" class="img-responsive" style="min-height:70px!important;" /></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:30px;margin-right:0px;border:none;float:right;">
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold;padding-top:20px">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li class="dropdown" style="background-color:white;">
+                        <a href="services/index.html" style="display: inline-block;border:none!important;background-color:white;">SERVICES</a><a style="display: inline-block;border:none!important;float:right;background-color:white;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/free-sales-training.html">Free Sales Training</a></li>
+                            <li><a href="services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                            <li><a href="services/inbound-marketing.html">Inbound Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li style="border:none;padding:10px"><a href="free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                    <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tooop" style="display:none">
+        <div class="visible-lg">
+            <nav class="navbar navbar-default navbar-fixed-top " style="background-color:white;opacity:.93">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="padding:0px!important ; margin:0px!important;">
+                            <span><img src="images/wesley-capital-logo.webp" class="img-responsive" style="max-height:50px!important;" /></span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold">
+                        <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                            <li><a href="index.html">HOME</a></li>
+
+                            <li class="dropdown">
+                                <a href="services/index.html" style="display: inline-block;border:none!important;">SERVICES</a><a style="display: inline-block;border:none!important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services/free-sales-training.html">Free Sales Training</a></li>
+                                    <li><a href="services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                                    <li><a href="services/inbound-marketing.html">Inbound Marketing</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li style="border:none;padding:10px"><a href="free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                            <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="fixed" style="text-align:center;color:#FFFFFF;background-image:url('http://cdn2.hubspot.net/hub/273774/file-1936379172-jpg/mp/themes/Act-Theme/images/act-theme-home-hero-banner.jpg');min-height: 600px !important;padding-top: 150px !important;">
+        <div class="container">
+            <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 30px;text-align: center;font-weight: 300;">
+                Did you know that the average tenure of a sales manager is<br />only 19 months (this is even less in SMEs).
+            </p>
+            <br />
+            <h1 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 70px;font-weight: bold;letter-spacing: -0.05em;margin: 0px 0px 40px;padding: 20px 0px;">
+                CHOOSE YOUR NEXT SALES<br />LEADER WISELY.
+            </h1>
+            <hr />
+            <div style="margin-bottom:50px;margin-top:200px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#1" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="1" class="row" style="background-color:#67aded;margin:0px;padding:0px;">
+        <div class="col-xs-12 col-md-9" style="text-align:center;padding-top:75px;padding-bottom:75px">
+            <h1>The 10 New Sales Statistics You Need to Know!</h1>
+            <br /><br />
+            <a href="#" class="btn btn-lg btn-default blogbtn" style="background-color:#fff;color:#000;">DOWNLOAD</a>
+
+        </div>
+        <div class="col-xs-12 col-md-3" style="padding:0px;">
+            <img src="images/Dapper_Forties.png" class="img-responsive" />
+        </div>
+
+    </div>
+
+
+    <div class="container" style="text-align:center;padding-top:100px;">
+        <h1 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 30px;font-weight: bold;letter-spacing: -0.05em;margin: 0px 0px 40px;">
+            We're Obsessed About Helping Entrepreneurs Succeed
+        </h1>
+        <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 30px;text-align: center;font-weight: 300;">
+            We create learning cultures that are ethical and altruistic in nature,<br /> where employees are dedicated to improvement and empowered to<br />take ownership and responsibility for their own success.
+        </p>
+        <br />
+        <a href="free-sales-assessment.html" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">GET STARTED ›</a>
+        
+        <div style="margin-bottom:50px;margin-top:150px;text-align:center;">
+            <div class="arrow center-block">
+                <a href="#2" class="nav-link" style="color:#ff6114;">
+                    <i class="fas fa-angle-down fa-2x arrlink"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="2" style="background-color:#fafafa;padding-top:75px;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <p style="font-size: 55px;text-align: left;padding-top:75px;line-height:75px;color:#000">
+                        BUILDING<br />THE SALES <br />AND<br />MARKEt<br />PROGRAM<br /> 
+                        <strong style="font-weight:900">YOU WANT!</strong>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <h1 style="font-size: 30px;text-align: left;">
+                        <strong>We Become Your Onsite/On-call Chief Revenue Officer!</strong>
+                    </h1>
+                    <br />
+                    <p style="font-size: 18px;text-align: left;">
+                        You can no longer afford to waste time hiring the wrong sales managers. You need a leader that possesses the skills to recruit top talent, the knowledge to train your staff effectively and the ability to implement inbound marketing strategies.
+                    </p>
+                    <br />
+                    <p style="font-size: 18px;text-align: left;">
+                        <strong >Advantages you'll receive when you outsource your sales leadership include:</strong>
+                    </p>
+                    <ul class="list1">
+                        <li><strong>Achieve More:</strong> We can help you hire better, train more efficiently and market more successfully.</li>
+                        <li><strong>Expert Advice:</strong> All Chief Revenue Officers (CROs) possess Master's degrees, 10+ years experience as senior sales leaders within small business. Additionally each CRO is supported with a team of experts (content writers, online marketers, web developers, recruiters, etc.)</li>
+                        <li><strong>Affordable:</strong> Choose the services that suit you. We work on a cost-effective, agreed to monthly fee or one time fee, whichever suits you. Outsource your sales leadership for less than the cost of hiring an administrative assistant.</li>
+                        <li><strong>All-in-one System:</strong> We bring with us marketing automation software, CRM software, fully developed sales training programs, and more. </li>
+                        <li><strong>Accessible:</strong> Your CRO is available whenever you need them – online, on the phone, or in person. A typical arrangement is for the CRO to be onsite at least one day per week and working with your team.</li>
+                        <li><strong>Repeatable System:</strong> We create a repeatable system by customizing your sales processes, recruiting strategy and sales training.</li>
+                    </ul>
+                    <div style="text-align:center;padding-top:50px">
+                        <a href="free-sales-assessment.html" class="btn btn-lg btn-warning" style="background-color:#ff6114;margin:5px;color:#FFFFFF;">LEARN MORE ›</a>
+                        <a href="about.html" class="btn btn-lg btn-default blogbtn" style="background-color:#FFF;color:#000;margin:5px;">GET STARTED ›</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div style="margin-bottom:30px;margin-top:50px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#3" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="3" style="background-color:#393939;padding-top:75px;">
+        <div class="container">
+            <p style="font-size: 65px;text-align: center;line-height:75px;color:#fff">
+                <strong style="font-weight:900">Our Values</strong>
+            </p>
+            <br />
+            <ul class="list2">
+                <li><strong style="color:#ff6a00;font-weight:900;">L </strong><strong style="font-weight:900;">EARNING</strong> - embrace change, & never stop learning </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">E </strong><strong style="font-weight:900;">THICAL</strong> - always do the right thing </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">A </strong><strong style="font-weight:900;">LTRUISTIC</strong> - think of others first and become a trusted friend </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">D </strong><strong style="font-weight:900;">EDICATED</strong> -  do everything with passion and love what you do </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">E </strong><strong style="font-weight:900;">MPOWERING</strong> - lead through example, provide autonomy and support </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">R </strong><strong style="font-weight:900;">ESPONSIBLE</strong> - take ownership, and get the job done with no excuses </li>
+                <li><strong style="color:#ff6a00;font-weight:900;">S </strong><strong style="font-weight:900;">CIENTIFIC</strong> - make evidence-based decisions </li>
+
+            </ul>
+
+            <div style="margin-bottom:30px;margin-top:100px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#4" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="4" class="container" style="padding-top:70px;">
+        <div style="padding-bottom:50px;text-align:center;">
+            <p style="font-size: 55px;padding-bottom:20px;">
+                Meet Our Leadership Team
+            </p>
+            <p style="font-size: 22px;">
+                Every Chief Revenue Officer has a team of experts supporting their efforts
+            </p>
+        </div>
+        <div class="container">
+            <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px" />
+        </div>
+        <br /><br />
+        <div class="row">
+            <div class="col-xs-12 col-sm-4" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="images/Head_Shot.jpg" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:left;font-size:17px;font-weight:bold;color:white;">
+                        Ashley Wesley 
+                    </p>
+                    <p style="padding:10px 20px;">
+                        <strong>Chief Revenue Officer</strong><br /><br />
+                        All our chief revenue officers are highly experienced and qualified individuals that can bring value to your business.  Ashley possesses his Executive Master's Degree in Leadership; he also holds a post-graduate certificate in human resources management, two advanced human resources designations (CHRP, CHLP), and a certified management designation (CIM). Additionally, Ashley is certified to conduct psychological testing and evaluations.
+                        <br /><br />
+                        ash@wesleycapital.ca
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="images/team-member-portrait_1-small-optimized-2.jpg" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:left;font-size:17px;font-weight:bold;color:white;">
+                        Tiffany Garden
+                    </p>
+                    <p style="padding:10px 20px;">
+                        <strong>Content Development Manager</strong><br /><br />
+                        We make content creation simple. Our writing specialists are able to speak knowledgeably on niche topics providing you a higher level value. Furthermore we guarantee the quality of the content.  Not sure about our work?  Pay nothing. Yes nothing.  Our team consists of writers from tech, staffing, construction and others.  No matter your needs we have a writer for you.
+                        <br /><br />
+                        tiffany@wesleycapital.ca
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="images/team-member-portrait_2-small-optimized-1.jpg" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:left;font-size:17px;font-weight:bold;color:white;">
+                        Matthew B.
+                    </p>
+                    <p style="padding:10px 20px;">
+                        <strong>Website Design Manager</strong><br /><br />
+                        Our websites are designed to help businesses succeed online. We have brought together a team of people who are dedicated to bringing our clients a high quality of work that their business can be proud of.  Building a website should never feel like pulling teeth, it should be a smooth process that builds a strong asset for your business.
+                        <br /><br />
+                        matt@wesleycapital.ca
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:50px;margin-top:50px;text-align:center;">
+            <div class="arrow center-block">
+                <a href="#5" class="nav-link" style="color:#ff6114;">
+                    <i class="fas fa-angle-down fa-2x arrlink"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="5" class="fixed" style="text-align:center;color:#FFFFFF;background-image:url('http://cdn2.hubspot.net/hub/273774/file-1936892410-jpg/mp/themes/Act-Theme/images/bottom-offer-banner.jpg');padding-top: 100px !important;">
+        <div class="container">
+            <h1 style="font-size: 40px;font-weight: bold;letter-spacing: -0.05em;margin: 0px 0px 40px;padding: 10px 0px;">
+                Our Team is Ready<br /><br />
+                ~ Are YOU? ~
+            </h1>
+            <a href="#" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;">GET STARTED ›</a>
+            <br /><br />
+            <img src="images/Untitled_design_53.webp" class="img-responsive"/>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+                <div style="background-color:#333333;color:white;padding-top:60px;padding-bottom:20px; background-image:url('https://cdn2.hubspot.net/hub/273774/file-1146934634-png/mp/themes/Act-Theme/images/footer-pattern.png')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 cc">
+                                <h4>CONTACT</h4>
+                                <p>
+                                    Wesley Capital Ltd.<br />
+                                    218 Silvercreek Pkwy N #17A.<br />
+                                    Guelph, ON<br />
+                                    N1H 8E8, Canada<br />
+                                    519-994-4933<br />
+                                    ash@wesleycapital.ca<br />
+                                </p>
+                                <br /><br /><br />
+                            </div>
+                            <div class="col-xs-12 col-sm-3 cc">
+                                <h4>FROM OUR BLOG</h4>
+                                <ul class="footermenu">
+                                    <li>
+                                        <a href="#">Sales Onboarding and Training Best Practices</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Effectively Interviewing Top Sales Candidates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Are You Looking for the Right Sales Talent Fit?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">How to Approach Top Sales Recruits (With Free Template)</a>
+                                    </li>
+                                </ul>
+                                <br /><br /><br />
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input id="Text1" class="form-control cinput" required type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input id="Text1" class="form-control cinput" required type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>Email*</label>
+                                            <input id="Text1" class="form-control cinput" required type="text" />
+                                            <br /><br />
+                                            <input id="Submit1" class="btn btn-lg btn-warning" type="submit" value="SUBSCRIBE" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br /><br />
+                            </div>
+                            <div class="col-xs-12 col-sm-3 cc">
+                                <h4>CONNECT WITH US</h4>
+                                <div class="social">
+                                    <i class="fab fa-twitter fa-lg" style="color:white;"></i>
+                                </div>
+                                <div class="social">
+                                    <i class="fab fa-linkedin-in fa-lg" style="color:white;"></i>
+                                </div>
+                                <div class="social">
+                                    <i class="fab fa-google-plus-g fa-lg" style="color:white;"></i>
+                                </div>
+                                <div class="social">
+                                    <i class="fab fa-facebook-f fa-lg" style="color:white;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="background-color:#222222;color:white;padding:20px 0px;">
+                    <div class="container">
+                        <h6><strong> © 2018 WESLEY CAPITAL LTD.</strong></h6>
+                    </div>
+                </div>
+
+                <div id="upup" style="position:fixed;bottom:-1px;right:10px;display:none;" class="container-fluid ">
+                    <a href="#" class="back-to-top">
+                        <i class="fas fa-angle-up fa-2x" style="color:white;background-color:#444;width:50px;height:40px;opacity:.8;"></i>
+                    </a>
+                </div>
+
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:white!important;padding-top:100px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search this site in Google" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" id="basic-addon1" style="background-color:#ff6114;color:white;"><span class="fas fa-search" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+                <script>
+                    $(window).scroll(function () {
+                        if ($(window).scrollTop() > 100) {
+                            $('.tooop').fadeIn(1000);
+                        } else {
+                            $('.tooop').fadeOut();
+                        };
+
+
+                        if ($(window).scrollTop() > 300) {
+                            $('#upup').slideDown();
+                        } else {
+                            $('#upup').slideUp();
+                        };
+                    });
+                </script>
+
+                <script>
+                    jQuery(document).ready(function () {
+                        var offset = 250;
+                        var duration = 300;
+
+                        jQuery('.back-to-top').click(function (event) {
+                            event.preventDefault();
+                            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                            return false;
+                        })
+                    });
+                </script>
+
+
+                <script>
+                    $(document).ready(function () {
+
+                        $('.cinput').focus(function () {
+                            $('.cc').addClass("blur");
+                        });
+                        $('.cinput').blur(function () {
+                            $('.cc').removeClass("blur");
+                        });
+
+                    });
+                </script>
+
+
+    <script>
+       // duration is 800
+       $(document).ready(function () {
+           $(".nav-link").on('click', function (event) {
+               if (this.hash !== "") {
+                   event.preventDefault();
+                   var hash = this.hash
+                   $('html, body').animate({
+                       scrollTop: $(hash).offset().top
+                   }, 800, function () {
+                       window.location.hash = hash;
+                   });
+               }
+           });
+       });
+    </script>
+
+</body>
+</html>

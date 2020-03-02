@@ -1,0 +1,6 @@
+F:\Downloads\WesleyCap\WesleyCap\bin\WesleyCap.dll.config
+F:\Downloads\WesleyCap\WesleyCap\bin\WesleyCap.dll
+F:\Downloads\WesleyCap\WesleyCap\bin\WesleyCap.pdb
+F:\Downloads\WesleyCap\WesleyCap\obj\Debug\WesleyCap.csprojResolveAssemblyReference.cache
+F:\Downloads\WesleyCap\WesleyCap\obj\Debug\WesleyCap.dll
+F:\Downloads\WesleyCap\WesleyCap\obj\Debug\WesleyCap.pdb

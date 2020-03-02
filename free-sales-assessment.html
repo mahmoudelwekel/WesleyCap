@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Get Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-16" />
+
+    <script src="fontawesome-all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <!--    Jquery library-->
+    <script src="jquery-3.1.1.min.js"></script>
+
+    <!--    bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--    bootstrap JS-->
+    <script src="bootstrap.min.js"></script>
+
+    <style>
+         body{
+        font-family: 'Open Sans', sans-serif;
+    } 
+         @media (min-width: 979px) {
+                ul.nav li.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                    }
+                
+                .dropdown-toggle{
+                    width:0px;
+                    display:none!important;
+                }
+                
+               
+            }
+    
+
+       body{
+        font-family: 'Open Sans', sans-serif;
+    }    
+       .navbar-nav li {
+           
+           margin:0px 0px 0px 0px ;
+        }
+       
+        .navbar-nav li :hover{
+            border-top:2px solid black;
+        }
+        
+        
+        .blogbtn{
+            border-width:2px;
+            border-color:#000000;
+        }
+        .blogbtn:hover
+        {
+            background-color:#000000 !important;
+            color:#FFFFFF !important;
+            border-color:#000000;
+        }
+        .dropdown-menu{
+            border-radius: 5px;
+            border-bottom: 3px solid #ff6114 ;
+            border-top:none!important;
+            background-color:rgba(0,0,0,0.5);
+            margin:0px!important;
+            padding:0px!important;
+
+        }
+        .dropdown-menu li{
+            margin:0px!important;
+            padding:0px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li a{
+            background-color:#3f3f3f;
+            margin-top:1px!important;
+            padding:10px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li :hover{
+            border:none !important;
+            background-color:black!important;
+        }
+        .dropdown:hover{
+            border-top:2px solid black;
+        }
+
+        .fixed {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .hovershadow {
+            width: 90%;
+            padding-bottom: 40px;
+            transition: transform .8s, box-shadow 1.5s;
+            margin: 0 auto;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+            .hovershadow:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2);
+                box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+            }
+
+        .blur {
+            filter: blur(2px);
+        }
+
+        .footermenu {
+            padding: 0px !important;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+            .footermenu li a {
+                padding: 8px 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                color: white !important;
+                text-decoration-style: none !important;
+                display: inline-block !important;
+            }
+
+            .footermenu li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+
+        .cinput {
+            background-color: #444;
+            border-color: #444;
+            border-width: 2px;
+        }
+
+            .cinput:focus {
+                border-color: #ff6114;
+            }
+            .shadow{
+            height:300px;
+            transition: box-shadow 0.3s ease-in-out;
+
+        }
+        .shadow:hover{
+            box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.05);
+        }   
+             .social{
+            height:60px;width:60px;background-color:rgb(34, 34, 34);border-radius:5px;padding:20px;float:left;margin:1px;
+            border-top: solid 2px rgb(34, 34, 34);
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            transition : border 500ms ease-out;
+        }
+        .social:hover{
+            border-width: 2px;
+            border-color:#ff6114;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default" style="background-color:white;margin:0px !important;">
+        <div class="container">
+            <div class="navbar-header" style="height:100px;">
+
+                <div class="col-xs-10 col-sm-8 col-md-12">
+                    <a class="navbar-brand" href="#">
+                        <span><img src="images/wesley-capital-logo.webp" class="img-responsive" style="min-height:70px!important;" /></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:30px;margin-right:0px;border:none;float:right;">
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold;padding-top:20px">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li class="dropdown" style="background-color:white;">
+                        <a href="services/index.html" style="display: inline-block;border:none!important;background-color:white;">SERVICES</a><a style="display: inline-block;border:none!important;float:right;background-color:white;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/free-sales-training.html">Free Sales Training</a></li>
+                            <li><a href="services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                            <li><a href="services/inbound-marketing.html">Inbound Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li style="border:none;padding:10px"><a href="blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                    <li style="border:none;padding:10px"><a href="free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                    <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tooop" style="display:none">
+        <div class="visible-lg">
+            <nav class="navbar navbar-default navbar-fixed-top " style="background-color:white;opacity:.93">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="padding:0px!important ; margin:0px!important;">
+                            <span><img src="images/wesley-capital-logo.webp" class="img-responsive" style="max-height:50px!important;" /></span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold">
+                        <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                            <li><a href="index.html">HOME</a></li>
+
+                            <li class="dropdown">
+                                <a href="services/index.html" style="display: inline-block;border:none!important;">SERVICES</a><a style="display: inline-block;border:none!important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="services/free-sales-training.html">Free Sales Training</a></li>
+                                    <li><a href="services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                                    <li><a href="services/inbound-marketing.html">Inbound Marketing</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li style="border:none;padding:10px"><a href="blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                            <li style="border:none;padding:10px"><a href="free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                            <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div style="background-color:#fafafa;padding-top:50px ;padding-bottom:100px ;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6" style="padding-right:20px">
+                    <h2>3 KEY BENEFITS OF <br /><strong>YOUR REVENUE ASSESSMENT</strong></h2>                    
+                    <br /><br />
+                    
+                    <div class="col-xs-12" style="margin-bottom:50px;">
+                        <div class="col-xs-12 col-sm-3" style="padding-top:15px;">
+                            <i class="fas fa-chart-line fa-7x" style="color:#5e889e;"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h3>Inbound Marketing Grade</h3>
+                            <br />
+                            <p style="font-size:16px;">
+                                Examine your Website, Social Media, Messaging, Content, Call to Actions, SEO & more. It takes a complete marketing system to create qualified sales leads.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="margin-bottom:50px;">
+                        <div class="col-xs-12 col-sm-3" style="padding-top:15px;">
+                            <i class="fas fa-hand-holding-usd fa-7x" style="color:#5e889e;"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h3>Sales Recruitment</h3>
+                            <br />
+                            <p style="font-size:16px;">
+                                Evaluate your overall recruitment strategy.  This includes compensation, recruiting methods and selection process.  We compare your current situation with best practices.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="margin-bottom:20px;">
+                        <div class="col-xs-12 col-sm-3" style="padding-top:15px;">
+                            <i class="fas fa-users fa-7x" style="color:#5e889e;"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h3>Sales Training & Coaching</h3>
+                            <br />
+                            <p style="font-size:16px;">
+                                Understand your current staff's strenghts and weaknessses and the organization's current development strategy. Then make some suggestions based on our customized system.
+                                <br /><br />
+                                <strong>Speak with an experienced Chief Revenue Officer and get your sales and marketing teams moving.</strong>
+                                <br /><br />
+                            </p>
+                            <p style="font-size:13px;border-top:1px solid black;padding-top:20px;">
+                                After you complete the form, you will receive an email from our office within 24 hours outlining next steps. This email will include the name of your assigned Chief Revenue Officer, a link to their LinkedIn Profile, and access to their calendar (pick the most convenient time for you!). All first sessions are conducted via GoToMeeting or WebEx.
+                                <br /><br />
+                                If you require immediate assistance or would prefer to talk with someone now, please contact us using any of the alternative communication options listed below: phone, email, or social networks. 
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+
+                <div class="container">
+                    <div class="col-xs-12 col-md-6" style="border:5px solid #444;border-radius:5px;padding:30px">
+                        <h3>We start every relationship with a FREE no obligation, revenue assessment.</h3>
+                        <br /><br />
+                        <div class="form-group">
+                            <label>First Name*</label>
+                            <input id="Text1" class="form-control" required type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name*</label>
+                            <input id="Text1" class="form-control" required type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label>Email*</label>
+                            <input id="Text1" class="form-control" required type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number*</label>
+                            <input id="Text1" class="form-control" required type="text" />
+                            <br /><br />
+                            <input class="btn btn-lg btn-warning" type="submit" value="I HAVE QUESTIONS" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#fafafa;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 shadow" style="padding:30px ">
+                    <i class="fas fa-location-arrow fa-7x" style="color:#ff6114;border:7px solid #ff6114;border-radius:50%;padding:20px;"></i>
+                    <br /><br />
+                    <h4>Wesley Capital Ltd.</h4>
+                    <strong>218 Silvercreek Pkwy N<br />#17A. Guelph, ON. N1E 7C6<br />Canada.</strong>
+                </div>
+                <div class="col-xs-12 col-md-3 shadow" style="padding:30px;background-color:#dddddd;height:300px ">
+                    <i class="fas fa-envelope fa-7x" style="color:#ff6114;border:7px solid #ff6114;border-radius:50%;padding:20px;"></i>
+                    <br /><br />
+                    <h4>Email</h4>
+                    <strong>sales@wesleycapital.ca</strong>
+                </div>
+                <div class="col-xs-12 col-md-3 shadow" style="padding:30px;background-color:#eeeeee;height:300px ">
+                    <i class="fas fa-phone fa-7x" style="color:#ff6114;border:7px solid #ff6114;border-radius:50%;padding:20px;"></i>
+                    <br /><br />
+                    <h4>Phone</h4>
+                    <strong>519-994-4933</strong>
+                </div>
+                <div class="col-xs-12 col-md-3 shadow" style="padding:30px ">
+                    <i class="fas fa-share-alt fa-7x" style="color:#ff6114;border:7px solid #ff6114;border-radius:50%;padding:20px;"></i>
+                    <br /><br />
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <i class="fab fa-twitter fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-linkedin-in fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-google-plus-g fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f fa-lg" style="color:white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color:#333333;color:white;padding-top:60px;padding-bottom:20px; background-image:url('https://cdn2.hubspot.net/hub/273774/file-1146934634-png/mp/themes/Act-Theme/images/footer-pattern.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONTACT</h4>
+                    <p>
+                        Wesley Capital Ltd.<br />
+                        218 Silvercreek Pkwy N #17A.<br />
+                        Guelph, ON<br />
+                        N1H 8E8, Canada<br />
+                        519-994-4933<br />
+                        ash@wesleycapital.ca<br />
+                    </p>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>FROM OUR BLOG</h4>
+                    <ul class="footermenu">
+                        <li>
+                            <a href="#">Sales Onboarding and Training Best Practices</a>
+                        </li>
+                        <li>
+                            <a href="#">Effectively Interviewing Top Sales Candidates</a>
+                        </li>
+                        <li>
+                            <a href="#">Are You Looking for the Right Sales Talent Fit?</a>
+                        </li>
+                        <li>
+                            <a href="#">How to Approach Top Sales Recruits (With Free Template)</a>
+                        </li>
+                    </ul>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                                <br /><br />
+                                <input id="Submit1" class="btn btn-lg btn-warning" type="submit" value="SUBSCRIBE" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONNECT WITH US</h4>
+                    <div class="social">
+                        <i class="fab fa-twitter fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-linkedin-in fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-google-plus-g fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f fa-lg" style="color:white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color:#222222;color:white;padding:20px 0px;">
+        <div class="container">
+            <h6><strong> © 2018 WESLEY CAPITAL LTD.</strong></h6>
+        </div>
+    </div>
+
+    <div id="upup" style="position:fixed;bottom:-1px;right:10px;display:none;" class="container-fluid ">
+        <a href="#" class="back-to-top">
+            <i class="fas fa-angle-up fa-2x" style="color:white;background-color:#444;width:50px;height:40px;opacity:.8;"></i>
+        </a>
+    </div>
+
+
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:white!important;padding-top:100px;">
+        <div class="modal-dialog" role="document" >
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search this site in Google" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" id="basic-addon1" style="background-color:#ff6114;color:white;"><span class="fas fa-search" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 100) {
+                        $('.tooop').fadeIn(1000);
+                    } else {
+                        $('.tooop').fadeOut();
+                    };
+
+
+                    if ($(window).scrollTop() > 300) {
+                        $('#upup').slideDown();
+                    } else {
+                        $('#upup').slideUp();
+                    };
+                });
+    </script>
+
+    <script>
+                jQuery(document).ready(function () {
+                    var offset = 250;
+                    var duration = 300;
+
+                    jQuery('.back-to-top').click(function (event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                        return false;
+                    })
+                });
+    </script>
+
+
+    <script>
+                $(document).ready(function () {
+
+                    $('.cinput').focus(function () {
+                        $('.cc').addClass("blur");
+                    });
+                    $('.cinput').blur(function () {
+                        $('.cc').removeClass("blur");
+                    });
+
+                });
+    </script>
+
+
+</body>
+
+</html>

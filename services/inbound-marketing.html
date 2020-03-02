@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>INBOUND MARKETING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-16" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <script src="../fontawesome-all.js"></script>
+
+    <!--    Jquery library-->
+    <script src="../jquery-3.1.1.min.js"></script>
+
+    <!--    bootstrap CSS-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--    bootstrap JS-->
+    <script src="../bootstrap.min.js"></script>
+
+
+    <style>
+            body{
+        font-family: 'Open Sans', sans-serif;
+    } 
+         @media (min-width: 979px) {
+                ul.nav li.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                    }
+                
+                .dropdown-toggle{
+                    width:0px;
+                    display:none!important;
+                }
+                
+               
+            }
+    
+
+       body{
+        font-family: 'Open Sans', sans-serif;
+    }    
+       .navbar-nav li {
+           
+           margin:0px 0px 0px 0px ;
+        }
+       
+        .navbar-nav li :hover{
+            border-top:2px solid black;
+        }
+        
+        
+        .blogbtn{
+            border-width:2px;
+            border-color:#000000;
+        }
+        .blogbtn:hover
+        {
+            background-color:#000000 !important;
+            color:#FFFFFF !important;
+            border-color:#000000;
+        }
+        .dropdown-menu{
+            border-radius: 5px;
+            border-bottom: 3px solid #ff6114 ;
+            border-top:none!important;
+            background-color:rgba(0,0,0,0.5);
+            margin:0px!important;
+            padding:0px!important;
+
+        }
+        .dropdown-menu li{
+            margin:0px!important;
+            padding:0px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li a{
+            background-color:#3f3f3f;
+            margin-top:1px!important;
+            padding:10px!important;
+            color:white!important;
+            border-top:0px solid #808080 !important;
+        }
+        .dropdown-menu li :hover{
+            border:none !important;
+            background-color:black!important;
+        }
+        .dropdown:hover{
+            border-top:2px solid black;
+        }
+
+        .fixed {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .btn-lg {
+            margin: 10px;
+        }
+
+        .hovershadow {
+            width: 90%;
+            height:500px;
+            transition: transform .8s, box-shadow 1.5s;
+            margin: 0 auto;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+            .hovershadow:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.2);
+                box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+            }
+
+        .blur {
+            filter: blur(2px);
+        }
+
+        .footermenu {
+            padding: 0px !important;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+            .footermenu li a {
+                padding: 8px 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+                color: white !important;
+                text-decoration-style: none !important;
+                display: inline-block !important;
+            }
+
+            .footermenu li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+
+        .cinput {
+            background-color: #444;
+            border-color: #444;
+            border-width: 2px;
+        }
+
+            .cinput:focus {
+                border-color: #ff6114;
+            }
+            @media (min-width: 979px) {
+                ul.nav li.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                    }
+                .caret{
+                    display:none;
+                }
+            }
+
+             .arrow{
+            width:40px;height:40px;border-radius:50%;padding:5px
+        }
+        .arrow:hover{
+            border:2px solid #ff6114;
+        }
+        .arrlink:hover{
+            color:#ff6114;
+        }
+        .icon{
+            background-color:#ff6114;height:80px;width:80px;padding:18px 0px 0px 13px ;border-radius:50%;color:white;
+            
+            transition:color .5s ease-in, background .3s ease-out;
+        }
+        .icon:hover{
+            color:#ff6114;
+            background-color:#fafafa;
+        }
+          .social{
+            height:60px;width:60px;background-color:rgb(34, 34, 34);border-radius:5px;padding:20px;float:left;margin:1px;
+            border-top: solid 2px rgb(34, 34, 34);
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            transition : border 500ms ease-out;
+        }
+        .social:hover{
+            border-width: 2px;
+            border-color:#ff6114;
+            background-color:black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" style="background-color:white;margin:0px !important;">
+        <div class="container">
+            <div class="navbar-header" style="height:100px;">
+
+                <div class="col-xs-10 col-sm-8 col-md-12">
+                    <a class="navbar-brand" href="#">
+                        <span><img src="../images/wesley-capital-logo.webp" class="img-responsive" style="min-height:70px!important;" /></span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top:30px;margin-right:0px;border:none;float:right;">
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                        <span class="icon-bar" style="background-color:#000000"></span>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold;padding-top:20px">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                    <li><a href="../index.html">HOME</a></li>
+
+                    <li class="dropdown" style="background-color:white;">
+                        <a href="../services/index.html" style="display: inline-block;border:none!important;background-color:white;">SERVICES</a><a style="display: inline-block;border:none!important;float:right;background-color:white;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/free-sales-training.html">Free Sales Training</a></li>
+                            <li><a href="../services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                            <li><a href="../services/inbound-marketing.html">Inbound Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li style="border:none;padding:10px"><a href="../blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                    <li style="border:none;padding:10px"><a href="../free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;font-weight:bold;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                    <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tooop" style="display:none">
+        <div class="visible-lg">
+            <nav class="navbar navbar-default navbar-fixed-top " style="background-color:white;opacity:.93">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="padding:0px!important ; margin:0px!important;">
+                            <span><img src="../images/wesley-capital-logo.webp" class="img-responsive" style="max-height:50px!important;" /></span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar" style="font-weight:bold">
+                        <ul class="nav navbar-nav navbar-right" role="tablist">
+
+                            <li><a href="../index.html">HOME</a></li>
+
+                            <li class="dropdown">
+                                <a href="../services/index.html" style="display: inline-block;border:none!important;">SERVICES</a><a style="display: inline-block;border:none!important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../services/free-sales-training.html">Free Sales Training</a></li>
+                                    <li><a href="../services/sales-recruitmen.html">Sales Recruitmen</a></li>
+                                    <li><a href="../services/inbound-marketing.html">Inbound Marketing</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="../about.html">ABOUT</a></li>
+                            <li><a href="../contact.html">CONTACT</a></li>
+                            <li style="border:none;padding:10px"><a href="../blog/index.html" class="btn btn-default blogbtn" style="border:2px solid black;font-weight:bold;padding:3px">BLOG</a></li>
+                            <li style="border:none;padding:10px"><a href="../free-sales-assessment.html" class="btn btn-default " style="background-color:#ff6114;color:#FFFFFF;border:2px solid #ff6114;font-weight:bold;padding:3px">FREE SALES TEAM ASSESSMENT</a></li>
+                            <li><a href="#" style="border-top:none!important;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search" style="border-top:none!important;"> </i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="fixed" style="text-align:center;color:#FFFFFF;background-image:url('https://www.wesleycapital.ca/hubfs/20_irresistible_Strawberry_Recipes_7.png?t=1535134525536');min-height: 800px !important;padding-top: 150px !important;">
+        <div class="container">
+            <h1 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 70px;font-weight: bold;letter-spacing: -0.05em;margin: 0px 0px 40px;padding: 20px 0px;">
+                INBUND MARKET
+            </h1>
+            <hr />
+            <br />
+            <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 22px;text-align: center;font-weight: 300;">
+                The internet has empowered prospects/job seekers with more knowledge and options than ever before.  To find new customers & top sales talent, you must move away from traditional selling tactics and embrace the journey to INBOUND marketing and sales.            </p>
+            <br /><br />
+            <a href="#" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">LET'S START ›</a>
+
+            <div style="margin-top:200px;margin-bottom:50px;">
+                <div class="arrow center-block">
+                    <a href="#1" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="1" class="container" style="text-align:center;padding-top:100px;">
+
+        <h1 style="font-size: 55px;">
+            Create More Leads
+        </h1>
+        <br />
+        <p style="font-size: 22px;">
+            We help you earn the trust of your prospects.
+        </p>
+        <br />
+        <br />
+        <div class="container">
+            <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px" />
+        </div>
+        <br /><br /><br />
+        <center>
+            <img src="../images/sgsdh.png" class="img-responsive" />
+        </center>
+        <br />
+        <h4>We help you design your inbound sales and marketing strategy to generate more qualified leads (prospects & candidates) and get your sales team closing faster.</h4>
+
+        <br /><br /><br />
+        <a href="../free-sales-assessment.html" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">SCHEDULE FREE</a>
+        
+        
+        <div style="margin-top:100px;margin-bottom:50px;">
+            <div class="arrow center-block">
+                <a href="#2" class="nav-link" style="color:#ff6114;">
+                    <i class="fas fa-angle-down fa-2x arrlink"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="2" style="background-color:#fafafa;padding-top:100px;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" style="text-align:center;">
+                    <img src="../images/10_Powerful_Inbound_Marketing_Charts-1.webp" style="max-width:100%;" />
+                </div>
+                <div class="col-md-7" style="text-align:center;">
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-bottom:50px;">
+                            <p style="font-size: 55px;padding-bottom:20px;">10 Powerful Charts</p>
+
+                            <p style="font-size: 22px;">
+                                There is no better way to find prospects.
+                            </p>
+                        </div>
+                        <div class="col-xs-12">
+                            <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px" />
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="font-size: 17px;padding-top:50px;">
+                                Are you still skeptical that inbound marketing is not a proven methodology that helps businesses grow? This ebook showcases a comprehensive report that shows the impact inbound marketing has on businesses just like yours.                            
+                            </p>
+                            <a href="#" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">DOWNLOAD ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:50px;margin-bottom:40px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#3" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="3" class="container" style="padding-top:100px">
+        <div class="row">
+            <div class="col-md-6" style="text-align:center;padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-sm-12" style="padding-bottom:10px;">
+                        <p style="font-size: 55px;padding-bottom:20px;">The Inbound Difference</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px" />
+                    </div>
+                    <div class="col-sm-12">
+                        <p style="font-size: 17px;padding-top:40px;">
+                            People’s behaviours have changed. They’re tuning out traditional marketing tactics. The old marketing playbook is BROKEN.  94% skip TV ads,  91% unsubscribe from email,  27% of direct mail is never opened, 200M are on the Do Not Call list.
+                        </p>
+                        <br /><br />
+                        <a href="../free-sales-assessment.html" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">DOWNLOAD ›</a>
+                        <a href="../free-sales-assessment.html" class="btn btn-lg btn-default blogbtn" style="background-color:transparent;">SCHEDULE FREE ›</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="text-align:center;">
+                <img src="../images/inbound-rectangle-test.webp" style="max-width:100%;" />
+            </div>
+        </div>
+
+        <div style="margin-top:30px;margin-bottom:40px;text-align:center;">
+            <div class="arrow center-block">
+                <a href="#4" class="nav-link" style="color:#ff6114;">
+                    <i class="fas fa-angle-down fa-2x arrlink"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="4" style="background-color:#fafafa;padding-top:70px;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
+        <div class="container">
+            <div style="padding-bottom:50px;text-align:center;">
+                <p style="font-size: 55px;padding-bottom:20px;">Multi-Channel Marketing</p>
+
+                <p style="font-size: 22px;">
+                    When you use inbound marketing, your customers will come to you.
+                </p>
+            </div>
+            <div class="container">
+                <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px;" />
+            </div>
+            <br /><br /><br /><br />
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row ">
+                        <div class="col-xs-12 col-md-6">
+
+                            <div class="row well-sm">
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-arrows-alt fa-3x" style="float:left;margin-left:6px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Stragegy</h3>
+                                        <p style="font-size:16px;">
+                                            marketing working together
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-info fa-3x" style="float:left;margin-left:19px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Blog</h3>
+                                        <p style="font-size:16px;">
+                                            Drive traffic to your site
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-thumbtack fa-3x" style="float:left;margin-left:12px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Calls-To-Action</h3>
+                                        <p style="font-size:16px;">
+                                            Gather leads and info effectively
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-step-forward fa-3x" style="float:left;margin-left:6px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Marketing Automation</h3>
+                                        <p style="font-size:16px;">
+                                            Create real time reporting
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="row well-sm">
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-retweet fa-3x" style="float:left;margin-left:2px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Social Media</h3>
+                                        <p style="font-size:16px;">
+                                            Get followers and promoters
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-reply fa-3x" style="float:left;margin-left:6px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Email Automation</h3>
+                                        <p style="font-size:16px;">
+                                            Engage prospects automatically
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-file-powerpoint fa-3x" style="float:left;margin-left:12px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>eBooks</h3>
+                                        <p style="font-size:16px;">
+                                            Create great engaging content
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 " style="padding:20px 0px 20px 30px;border-bottom:1px solid rgba(0,0,0,0.1);">
+                                    <div class="icon col-xs-4">
+                                        <i class="fas fa-laptop fa-3x" style="float:left;margin-left:0px; "></i>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3>Websites</h3>
+                                        <p style="font-size:16px;">
+                                            Turn visitors into prospects
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+
+
+            <p style="font-size: 18px;padding:50px 0px;text-align:center;">
+                We have partnered with HubSpot and the best inbound marketers in the industry to provide you a Manhattan marketing department that gets results.  Our specialists have designed numerous websites for the HubSpot COS and other industry-leading platforms.  Whether you need help with SEO strategy, optimizing websites, or content writing, we've got you covered.
+            </p>
+
+
+
+            <div style="margin-top:50px;margin-bottom:40px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#5" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="5" style="background-color:#404040;color:#FFFFFF;padding-top:100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7" style="text-align:right;">
+                    <div class="col-xs-3">
+                        <i class="fas fa-quote-left fa-2x" style="color:#ff6114"></i>
+                    </div>
+                    <div class="col-xs-9">
+                        <p style="font-size: 15px;text-align:left">
+                            “The concepts and lessons to be learned with Wesley Capital are invaluable when taken to market. I highly recommend his executive coaching to anyone who is serious about building their pipeline of business.”
+                        </p>
+                        <br />
+                        <img src="../images/Copy_of_Social_Media__Untitled_Design.webp" />
+                        <br />
+                    </div>
+
+                    <div class="col-xs-12">
+                        <p style="font-size: 15px;text-align:right;padding-top:30px;">
+                            <strong>Matthew Roher MBA</strong>., (Business Development Manager)
+                        </p>
+                    </div>
+
+                  
+                </div>
+                <div class="col-sm-5" style="text-align:left;">
+                    <a href="#" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">READ MORE »</a>
+                </div>
+            </div>
+
+            <div style="margin-top:30px;margin-bottom:30px;text-align:center;">
+                <div class="arrow center-block">
+                    <a href="#6" class="nav-link" style="color:#ff6114;">
+                        <i class="fas fa-angle-down fa-2x arrlink"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="6" class="container" style="padding-top:70px;">
+        <div style="padding-bottom:50px;text-align:center;">
+            <p style="font-size: 55px;padding-bottom:20px;">
+                The Inbound Funnel
+            </p>
+            <p style="font-size: 22px;">
+                We connect Inbound Marketing & Sales to make it simple and effective.
+            </p>
+        </div>
+        <div class="container">
+            <img src="https://cdn2.hubspot.net/hub/273774/file-1281286278-png/mp/themes/Act-Theme/images/bottom-shadow5.png" alt="" style="max-width:100%;height:10px" />
+        </div>
+        <br /><br />
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="../images/1.webp" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:center;font-size:17px;font-weight:bold;color:white;">
+                        GET TRAFFIC
+                    </p>
+                    <p style="padding:10px 20px;">
+                        Create blog content, search engine optimize (SEO) your content, and promote it on social media sites.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="../images/1_7.webp" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:center;font-size:17px;font-weight:bold;color:white;">
+                        GET LEADS
+                    </p>
+                    <p style="padding:10px 20px;">
+                        Place calls-to-action throughout your website to drive visitors to landing pages with forms. Visitors fill out the forms to get whatever you’re offering and become leads.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="../images/1_5.webp" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:center;font-size:17px;font-weight:bold;color:white;">
+                        GET CUSTOMERS
+                    </p>
+                    <p style="padding:10px 20px;">
+                        Send your leads automated emails to drive them along your buying cycle. Provide your sales team with lead intelligence so they can make more effective sales calls.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3" style="padding-bottom:50px;">
+                <div class="hovershadow thumbnail">
+                    <img src="../images/1_6.webp" style="max-width:100%;" />
+                    <p style="border-bottom:10px solid #ff6114;background-color:#444444 ;padding:15px;text-align:center;font-size:17px;font-weight:bold;color:white;">
+                        ANALYZING
+                    </p>
+                    <p style="padding:10px 20px;">
+                        Analyze the success of your marketing campaigns, and determine which areas need further optimization for future success.
+                        <br /><br />
+                    </p>
+                    <a href="../free-sales-assessment.html" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;">GET STARTED »</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="margin-top:30px;margin-bottom:30px;text-align:center;">
+            <div class="arrow center-block">
+                <a href="#7" class="nav-link" style="color:#ff6114;">
+                    <i class="fas fa-angle-down fa-2x arrlink"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="7" class="fixed" style="text-align:center;color:#FFFFFF;background-image:url('http://cdn2.hubspot.net/hub/273774/file-1936892410-jpg/mp/themes/Act-Theme/images/bottom-offer-banner.jpg');padding-top: 100px !important;">
+        <div class="container">
+            <h1 style="font-size: 40px;font-weight: bold;letter-spacing: -0.05em;margin: 0px 0px 40px;padding: 10px 0px;">
+                Our Team is Ready<br /><br />
+                ~ Are YOU? ~
+            </h1>
+            <a href="#" class="btn btn-lg btn-warning" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;">SIGN UP ›</a>
+            <br /><br />
+            <img src="../images/Untitled_design_53.webp" class="img-responsive" />
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="background-color:#333333;color:white;padding-top:60px;padding-bottom:20px; background-image:url('https://cdn2.hubspot.net/hub/273774/file-1146934634-png/mp/themes/Act-Theme/images/footer-pattern.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONTACT</h4>
+                    <p>
+                        Wesley Capital Ltd.<br />
+                        218 Silvercreek Pkwy N #17A.<br />
+                        Guelph, ON<br />
+                        N1H 8E8, Canada<br />
+                        519-994-4933<br />
+                        ash@wesleycapital.ca<br />
+                    </p>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>FROM OUR BLOG</h4>
+                    <ul class="footermenu">
+                        <li>
+                            <a href="#">Sales Onboarding and Training Best Practices</a>
+                        </li>
+                        <li>
+                            <a href="#">Effectively Interviewing Top Sales Candidates</a>
+                        </li>
+                        <li>
+                            <a href="#">Are You Looking for the Right Sales Talent Fit?</a>
+                        </li>
+                        <li>
+                            <a href="#">How to Approach Top Sales Recruits (With Free Template)</a>
+                        </li>
+                    </ul>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Company</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>Email*</label>
+                                <input id="Text1" class="form-control cinput" required type="text" />
+                                <br /><br />
+                                <input id="Submit1" class="btn btn-lg btn-warning" type="submit" value="SUBSCRIBE" style="background-color:#ff6114;color:#FFFFFF;margin:0px!important;" />
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br /><br />
+                </div>
+                <div class="col-xs-12 col-sm-3 cc">
+                    <h4>CONNECT WITH US</h4>
+                    <div class="social">
+                        <i class="fab fa-twitter fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-linkedin-in fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-google-plus-g fa-lg" style="color:white;"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f fa-lg" style="color:white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color:#222222;color:white;padding:20px 0px;">
+        <div class="container">
+            <h6><strong> © 2018 WESLEY CAPITAL LTD.</strong></h6>
+        </div>
+    </div>
+
+    <div id="upup" style="position:fixed;bottom:-1px;right:10px;display:none;" class="container-fluid ">
+        <a href="#" class="back-to-top">
+            <i class="fas fa-angle-up fa-2x" style="color:white;background-color:#444;width:50px;height:40px;opacity:.8;"></i>
+        </a>
+    </div>
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:white!important;padding-top:100px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search this site in Google" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" id="basic-addon1" style="background-color:#ff6114;color:white;"><span class="fas fa-search" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $('.tooop').fadeIn(1000);
+                } else {
+                    $('.tooop').fadeOut();
+                };
+
+
+                if ($(window).scrollTop() > 300) {
+                    $('#upup').slideDown();
+                } else {
+                    $('#upup').slideUp();
+                };
+            });
+    </script>
+
+    <script>
+        jQuery(document).ready(function () {
+            var offset = 250;
+            var duration = 300;
+
+            jQuery('.back-to-top').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('.cinput').focus(function () {
+                $('.cc').addClass("blur");
+            });
+            $('.cinput').blur(function () {
+                $('.cc').removeClass("blur");
+            });
+
+        });
+    </script>
+
+
+    <script>
+       // duration is 800
+       $(document).ready(function () {
+           $(".nav-link").on('click', function (event) {
+               if (this.hash !== "") {
+                   event.preventDefault();
+                   var hash = this.hash
+                   $('html, body').animate({
+                       scrollTop: $(hash).offset().top
+                   }, 800, function () {
+                       window.location.hash = hash;
+                   });
+               }
+           });
+       });
+    </script>
+</body>
+</html>

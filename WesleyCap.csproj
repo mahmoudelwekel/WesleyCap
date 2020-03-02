@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5559D09-6DED-4D69-97F3-9A6D0D223BED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WesleyCap</RootNamespace>
+    <AssemblyName>WesleyCap</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="blog\index.html" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="contact.html" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\responsive-text.css" />
+    <Content Include="fontawesome-all.js" />
+    <Content Include="free-sales-assessment.html" />
+    <Content Include="images\Dapper_Forties.png" />
+    <Content Include="images\download %282%29.png" />
+    <Content Include="images\download 3.png" />
+    <Content Include="images\download.png" />
+    <Content Include="images\fd.png" />
+    <Content Include="images\Head_Shot.jpg" />
+    <Content Include="images\imgres-4.jpg" />
+    <Content Include="images\Logo-Colour.jpg" />
+    <Content Include="images\PlitronNewLogo.png" />
+    <Content Include="images\sgsdh.png" />
+    <Content Include="images\team-member-portrait_1-small-optimized-2.jpg" />
+    <Content Include="images\team-member-portrait_2-small-optimized-1.jpg" />
+    <Content Include="images\Untitled_design_16.jpg" />
+    <Content Include="index.html" />
+    <Content Include="jquery-3.1.1.min.js" />
+    <Content Include="services\free-sales-training.html" />
+    <Content Include="services\inbound-marketing.html" />
+    <Content Include="services\index.html" />
+    <Content Include="services\sales-recruitmen.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\wesley-capital-logo.webp" />
+    <Content Include="images\Untitled_design_45.webp" />
+    <Content Include="images\Untitled_design_10.webp" />
+    <Content Include="images\donaldson-and-james-logo.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_2.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_3.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_4.webp" />
+    <Content Include="images\Copy_of_Instagram_Post__Untitled_Design_1.webp" />
+    <Content Include="images\imgres-3.webp" />
+    <Content Include="images\Untitled_design_12.webp" />
+    <Content Include="images\Untitled_design_4.webp" />
+    <Content Include="images\1.webp" />
+    <Content Include="images\10_Powerful_Inbound_Marketing_Charts-1.webp" />
+    <Content Include="images\1_5.webp" />
+    <Content Include="images\1_6.webp" />
+    <Content Include="images\1_7.webp" />
+    <Content Include="images\2.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_11.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_8.webp" />
+    <Content Include="images\Copy_of_400px_x_400px__Untitled_Design_9.webp" />
+    <Content Include="images\Copy_of_Social_Media__Untitled_Design-1.webp" />
+    <Content Include="images\Copy_of_Social_Media__Untitled_Design.webp" />
+    <Content Include="images\FLASH.webp" />
+    <Content Include="images\inbound-rectangle-test.webp" />
+    <Content Include="images\PRACTICE_4-1.webp" />
+    <Content Include="images\shutterstock_131916311.webp" />
+    <Content Include="images\Untitled_design_26.webp" />
+    <Content Include="images\Untitled_design_27.webp" />
+    <Content Include="images\Untitled_design_53.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53525</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53525/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
